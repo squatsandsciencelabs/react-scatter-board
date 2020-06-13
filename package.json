@@ -5,7 +5,6 @@
   "source": "src/index.jsx",
   "main": "dist/react-scatter-board.js",
   "umd:main": "dist/react-scatter-board.umd.js",
-  "module": "dist/react-scatter-board.mjs",
   "scripts": {
     "build:dash:js": "webpack --mode production",
     "build:dash:py": "python3 -m dash.development.component_generator ./src react-scatter-board -p package-info.json",
