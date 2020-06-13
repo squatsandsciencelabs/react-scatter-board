@@ -10,7 +10,7 @@
     "build:dash:js": "webpack --mode production",
     "build:dash:py": "python3 -m dash.development.component_generator ./src react-scatter-board -p package-info.json",
     "build:dash": "npm run build:dash:py && npm run build:dash:js",
-    "build:react:js": "microbundle build --target web -f es,umd --name react_scatter_board --jsx React.createElement --globals react=React,react-dom=ReactDOM,plotly.js=Plotly,prop-types=PropTypes -d dist",
+    "build:react:js": "microbundle build --target web -f cjs,es,umd --name react_scatter_board --jsx React.createElement --globals react=React,react-dom=ReactDOM,plotly.js=Plotly,prop-types=PropTypes -d dist",
     "build:react": "npm run build:react:js",
     "build:docs": "parcel build --no-cache example/index.html --no-source-maps --public-url=./ -d build",
     "dev": "parcel --no-cache example/index.html --no-source-maps -d build",
