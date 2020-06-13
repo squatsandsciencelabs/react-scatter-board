@@ -3,9 +3,9 @@
   "version": "1.2.0",
   "description": "A React implementation of THREE.js 2d/3d scatter plot",
   "source": "src/index.jsx",
-  "main": "dist/react_scatter_board.js",
-  "umd:main": "dist/react_scatter_board.umd.js",
-  "module": "dist/react_scatter_board.mjs",
+  "main": "dist/react-scatter-board.js",
+  "umd:main": "dist/react-scatter-board.umd.js",
+  "module": "dist/react-scatter-board.mjs",
   "scripts": {
     "build:dash:js": "webpack --mode production",
     "build:dash:py": "python3 -m dash.development.component_generator ./src react-scatter-board -p package-info.json",
